@@ -36,7 +36,7 @@ img {
 .globalHeader {
     display: flex;
     justify-content: space-between;
-    border: 1px solid #ddd;
+    height: 60px;
 }
 
 .globalHeader>.logo {
@@ -61,24 +61,26 @@ img {
 .nav {
     display: flex;
     align-items: center;
-    margin-right: 60px;
 }
 
 .nav>div {
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 
 /* main css */
 
 .globalMain {
-    border: 1px solid #ddd;
-    display: flex;
-    flex-wrap: wrap;
     margin-top: 8px;
+    display: flex;
+}
+.globalMain>.globalMain_works {
+    display: flex;
+    margin-right: -75px;
+    flex-wrap: wrap;
 }
 
-.globalMain>.works_items {
+.globalMain>.globalMain_works>a>.works_items {
     width: 350px;
     height: 280px;
     background-color: #1F2229;
@@ -86,10 +88,10 @@ img {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 40px;
     cursor: pointer;
     margin-right: 75px;
-    
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .works_items>.works_items_img {
@@ -118,6 +120,7 @@ img {
     overflow: hidden;
     white-space: nowrap;  
     text-overflow: ellipsis;
+   margin-top: 5px;
 }
 
 
