@@ -17,7 +17,6 @@ ul {
 
 body {
     background-color: #eee;
-    color: #333;
 }
 
 img {
@@ -81,30 +80,46 @@ img {
 
 .globalMain>.works_items {
     width: 350px;
-    height: 250px;
+    height: 280px;
     background-color: #1F2229;
     border-radius: 20px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     margin-top: 40px;
     cursor: pointer;
-    margin-right: 49px;
+    margin-right: 75px;
+    
 }
 
 .works_items>.works_items_img {
     width: 300px;
     height: 160px;
     border-radius: 10px;
-    margin-top: 20px;
 }
 
 .works_items_img>img {
     border-radius: 10px;
+    margin-left: 25px;
 }
 
 .works_items_img>img:hover {
     -webkit-animation: shake 0.25s;
 }
+
+.works_items> .works_items_description {
+    margin-top: 20px;
+    margin-left: 23px;
+    color: white;
+}
+.works_items> .works_items_description > p {
+    color: #ccc;
+    width: 300px;
+    overflow: hidden;
+    white-space: nowrap;  
+    text-overflow: ellipsis;
+}
+
 
 @-webkit-keyframes shake {
     0%,
