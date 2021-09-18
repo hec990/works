@@ -37,6 +37,7 @@ img {
     display: flex;
     justify-content: space-between;
     height: 60px;
+    border: 1px solid #ccc;
 }
 
 .globalHeader>.logo {
@@ -161,7 +162,9 @@ img {
     margin-left: 23px;
     color: white;
 }
-
+.works_items>.works_items_description>span:hover{
+    color: orange;
+}
 .works_items>.works_items_description>p {
     color: #ccc;
     width: 300px;
